@@ -433,7 +433,7 @@ void BlobFileReader::MultiGetBlob(
     assert(req->offset >= adjustment);
     adjustments.push_back(adjustment);
 
-    FSReadRequest read_req;
+    FSReadRequest read_req{};
     read_req.offset = req->offset - adjustment;
     read_req.len = req->len + adjustment;
     total_len += read_req.len;

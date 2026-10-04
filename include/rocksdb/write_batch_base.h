@@ -9,6 +9,7 @@
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 #include "rocksdb/rocksdb_namespace.h"
 #include "rocksdb/wide_columns.h"
